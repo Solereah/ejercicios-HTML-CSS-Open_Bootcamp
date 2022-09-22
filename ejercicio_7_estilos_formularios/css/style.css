@@ -2,10 +2,12 @@
 
 * {
   font-family: "Ubuntu", sans-serif;
-  color: white;
-  background-color: #161717;
 }
 
+body {
+  background-color: #161717;
+  color: white;
+}
 .container {
   display: flex;
   flex-direction: column;
