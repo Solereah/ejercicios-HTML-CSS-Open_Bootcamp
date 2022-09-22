@@ -13,6 +13,7 @@ body {
   background-color: rgb(13, 190, 131);
   color: white;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
 .btn-modern:hover {
@@ -20,5 +21,4 @@ body {
   color: rgb(24, 27, 26);
   box-shadow: 5px 5px 5px 2px rgba(6, 137, 47, 0.4);
   transform: translateY(-5px);
-  transition: all 0.4s;
 }
