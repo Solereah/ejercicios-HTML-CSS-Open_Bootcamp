@@ -10,13 +10,13 @@ body {
   min-height: 100%;
 }
 
-section.barra-lateral {
+.barra-lateral {
   flex-direction: column;
   background-color: salmon;
   padding: 0.3rem;
 }
 
-section.principal {
+.principal {
   flex-grow: 1;
   background-color: aquamarine;
   padding: 0.3rem;
