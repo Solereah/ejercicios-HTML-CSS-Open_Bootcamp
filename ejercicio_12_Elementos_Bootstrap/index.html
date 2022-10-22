@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Interés en Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--
+    Crea un nuevo documento HTML con el título "Elementos de Interés en Bootstrap"
+
+Utilizando la página oficial getboostrap.com, añade la última versión de Bootstrap a este documento HTML
+
+Crea tres secciones
+
+En la primera sección crea un Jumbotron replicando el que realizamos en el vídeo
+
+El botón de llamada a la acción debe abrir una ventana modal
+
+En la segunda sección crea un formulario de contacto con los campos "nombre" (text), "teléfono" (number) y mensaje (textarea)
+
+En la tercera sección crea una tarjeta con tu perfil de desarrollador/a que contenga lo siguiente
+
+Tu nombre en el título
+
+Una breve descripción
+
+Tu email en el footer -->
+    <section class="container">
+      <div class="bg-light p-5 rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+          <p class="col-md-8 fs-4">
+            Using a series of utilities, you can create this jumbotron, just
+            like the one in previous versions of Bootstrap. Check out the
+            examples below for how you can remix and restyle it to your liking.
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary btn-lg"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Launch demo modal
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Modal title
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Beatae magnam explicabo consectetur pariatur deserunt
+                  voluptatum reprehenderit accusamus voluptates voluptatem sint
+                  repudiandae vitae expedita nam eius nobis voluptatibus
+                  possimus, quo voluptate.
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="container-fluid py-5">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Introduce tu nombre</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Teléfono</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="34 744 654937"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Mensaje</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Deja tus comentarios"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="container">
+      <div class="container-fluid pb-4">
+        <div class="card" style="width: 18rem">
+          <img
+            src="./img/Sol Lereah_cv.jpg"
+            class="card-img-top"
+            alt="foto Sol Lereah"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sol Lereah</h5>
+            <p class="card-text">
+              Soy una persona curiosa, dinámica y perseverante. Me gusta
+              expandir mis horizontes y seguir creciendo. Por ese motivo, tengo
+              muchas ganas de llevar mi carrera a otro nivel e insertarme
+              laboralmente en el mundo de la programación.
+            </p>
+            <div class="card-footer">
+              <a href="#" class="card-link">slereah@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+</html>
